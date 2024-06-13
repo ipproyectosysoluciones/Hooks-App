@@ -69,3 +69,38 @@ El Hook `useMemo` se utiliza para memoizar valores calculados de manera costosa 
 ### 9. useCallback
 
 El Hook `useCallback` se utiliza para memoizar funciones y evitar su recreación en cada renderizado. Lo utilizamos para optimizar el rendimiento al memoizar callbacks que se pasan como propiedades a componentes hijos.
+
+## TodoApp con useReducer
+
+Este proyecto es una aplicación de gestión de tareas (TodoApp) que utiliza el hook `useReducer` de React para manejar el estado de las tareas. Este enfoque es fundamental para comprender el concepto de un Reducer, el cual es esencial para trabajar con Redux o utilizar el Context API de manera eficiente.
+
+### Contenido
+
+- [useReducer](#usereducer)
+- [Reducers](#reducers)
+- [Aplicación de TODOs](#aplicación-de-todos)
+- [CRUD local](#crud-local)
+
+### useReducer
+
+El hook `useReducer` es una alternativa a `useState` para manejar estados más complejos en componentes de React. En lugar de actualizar el estado directamente, se envían acciones al reducer, que se encarga de calcular el nuevo estado.
+
+### Reducers
+
+Un reducer es una función pura que toma el estado actual y una acción, y retorna un nuevo estado. Es una pieza clave en la gestión de estados complejos y en la implementación de patrones como Redux.
+
+### Aplicación de TODOs
+
+En esta aplicación de TODOs, utilizamos un reducer para manejar las siguientes acciones:
+
+- `Add Todo`: Agregar una nueva tarea.
+- `Remove Todo`: Eliminar una tarea existente.
+- `Toggle Todo`: Alternar el estado de una tarea (completada/no completada).
+
+### CRUD local
+
+La aplicación maneja las operaciones CRUD (Crear, Leer, Actualizar, Eliminar) de manera local, utilizando el almacenamiento local del navegador (localStorage) para persistir las tareas.
+
+### Conclusión
+
+Esta sección está dedicada a comprender y aplicar el concepto de un Reducer en React. Los conocimientos adquiridos aquí son esenciales para trabajar con Redux o Context API, permitiendo manejar estados complejos de manera eficiente. Además, sentamos las bases para secciones futuras donde se profundizará en pruebas y otras herramientas avanzadas de React.

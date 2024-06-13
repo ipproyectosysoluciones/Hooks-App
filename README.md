@@ -101,6 +101,52 @@ En esta aplicación de TODOs, utilizamos un reducer para manejar las siguientes 
 
 La aplicación maneja las operaciones CRUD (Crear, Leer, Actualizar, Eliminar) de manera local, utilizando el almacenamiento local del navegador (localStorage) para persistir las tareas.
 
-### Conclusión
+### Conclusión TodoApp
 
 Esta sección está dedicada a comprender y aplicar el concepto de un Reducer en React. Los conocimientos adquiridos aquí son esenciales para trabajar con Redux o Context API, permitiendo manejar estados complejos de manera eficiente. Además, sentamos las bases para secciones futuras donde se profundizará en pruebas y otras herramientas avanzadas de React.
+
+## SPA useContext
+
+Este proyecto se enfoca en el uso del hook `useContext` de React dentro de una aplicación de una sola página (SPA, Single Page Application). A continuación, se explica cada uno de los conceptos y componentes utilizados en el proyecto.
+
+### Context
+
+El `Context` de React se utiliza para compartir datos entre componentes sin necesidad de pasar props manualmente en cada nivel de la jerarquía de componentes.
+
+### Provider
+
+El `Provider` es un componente que se utiliza para envolver los componentes que necesitan acceder al contexto. Este componente acepta una prop `value` que será accesible para cualquier componente que consuma el contexto.
+
+### useContext
+
+El hook `useContext` permite a los componentes funcionales suscribirse a contextos de React. Este hook acepta un contexto (creado con `createContext`) y devuelve el valor actual del contexto para ese contexto.
+
+### React Router
+
+`React Router` es una biblioteca de enrutamiento para React que permite la navegación dinámica entre diferentes componentes sin recargar la página. Facilita la creación de rutas y la gestión de la navegación en una SPA.
+
+### Links y NavLinks
+
+`Link` y `NavLink` son componentes proporcionados por `React Router` que se utilizan para la navegación dentro de la aplicación.
+
+- `Link`: Proporciona una navegación simple entre rutas.
+- `NavLink`: Similar a `Link`, pero permite aplicar estilos adicionales cuando la ruta está activa.
+
+### CreateContext
+
+`createContext` es una función de React que se utiliza para crear un contexto. Esta función devuelve un objeto con dos propiedades: `Provider` y `Consumer`.
+
+- `Provider`: Se utiliza para proporcionar el valor del contexto.
+- `Consumer`: Se utiliza para suscribirse a los cambios en el contexto.
+
+### SPA (Single Page Application)
+
+Una SPA es una aplicación web que se carga una sola vez y que actualiza el contenido dinámicamente sin necesidad de recargar la página completa. Esto proporciona una experiencia de usuario más rápida y fluida.
+
+### Objetivo de la Sección
+
+El objetivo de esta sección es principalmente aprender sobre el uso del Context en React. El uso del Router es un valor agregado que se explotará mucho más en secciones posteriores. Al utilizar un Router, podemos explicar claramente el problema y la necesidad del context para compartir datos de manera eficiente entre componentes.
+
+### Conclusión SPA useContext
+
+Este proyecto es una excelente manera de entender cómo funciona el contexto en React y cómo se puede utilizar junto con `React Router` para manejar el estado global en una SPA. El uso del contexto facilita el manejo y la compartición de datos entre componentes sin la necesidad de pasar props manualmente en cada nivel, lo que simplifica el código y mejora la mantenibilidad.

@@ -31,7 +31,7 @@ export const LoginPage = () => {
       <hr />
 
       {/* Mostramos el estado actual del usuario en formato JSON */}
-      <pre>
+      <pre aria-label="pre">
         { JSON.stringify(user, null, 3) }
       </pre>
 

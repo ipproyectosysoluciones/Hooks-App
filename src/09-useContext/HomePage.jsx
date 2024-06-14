@@ -34,7 +34,7 @@ export const HomePage = () => {
       <hr />
 
       {/* Mostramos el objeto user en formato JSON para depuración */}
-      <pre>
+      <pre aria-label="pre">
         { JSON.stringify(user, null, 3) }
       </pre>
     </>

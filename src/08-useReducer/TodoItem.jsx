@@ -11,7 +11,8 @@ export const TodoItem = ({ todo, onDeleteTodo, onToggleTodo }) => {
           todo.done ? "text-decoration-line-through" : ""
         }`}
         // Llamada a la función onToggleTodo con el id de la tarea al hacer clic
-        onClick={ () => onToggleTodo( todo.id ) }
+        onClick={ () => onToggleTodo(todo.id) }
+        aria-label="span"
       >
         {todo.description}
       </span>

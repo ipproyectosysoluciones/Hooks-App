@@ -39,17 +39,17 @@ export const PokemonCard = ({ id, name, sprites }) => {
     <section style={{ height: 200 }}>
       {/* Título que muestra el id y el nombre del Pokémon */}
       <h2 className="text-capitalize">
-        #{ id }-{ name }
+        #{id}-{name}
       </h2>
 
       {/* Contenedor de las imágenes del Pokémon */}
       <div>
         {/* Mapeo de las imágenes (sprites) del Pokémon */}
-        {sprites.map(( sprite ) => (
+        {sprites.map((sprite, index) => (
           <img
-            key={ sprite } // Asignación de una key única para cada imagen
-            src={ sprite } // Fuente de la imagen
-            alt={ name } // Texto alternativo para la imagen
+            key={ index } // Asignación de una key única para cada imagen
+            src={sprite} // Fuente de la imagen
+            alt={name} // Texto alternativo para la imagen
           />
         ))}
       </div>

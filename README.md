@@ -150,3 +150,33 @@ El objetivo de esta sección es principalmente aprender sobre el uso del Context
 ### Conclusión SPA useContext
 
 Este proyecto es una excelente manera de entender cómo funciona el contexto en React y cómo se puede utilizar junto con `React Router` para manejar el estado global en una SPA. El uso del contexto facilita el manejo y la compartición de datos entre componentes sin la necesidad de pasar props manualmente en cada nivel, lo que simplifica el código y mejora la mantenibilidad.
+
+## Pruebas sobre Hooks y CustomHooks
+
+En esta sección, nos enfocaremos en realizar pruebas unitarias y de integración sobre los hooks y custom hooks que hemos desarrollado previamente. El objetivo principal es demostrar cómo podemos evaluar cada uno de los hooks aplicados en situaciones de uso reales.
+
+### Contenido Pruebas Unitarias
+
+1. **Pruebas Unitarias de Hooks**
+   - Realizaremos pruebas específicas para cada hook desarrollado, como `useCounter`, `useFetch`, `useTodos`, entre otros.
+   - Demostraremos cómo verificar el comportamiento esperado de estos hooks en diferentes situaciones, como incrementar o decrementar un contador, manejar el estado de una solicitud de API, gestionar una lista de tareas, entre otros.
+
+2. **Pruebas de Integración de CustomHooks**
+   - Además de las pruebas unitarias, también realizaremos pruebas de integración para nuestros custom hooks.
+   - Verificaremos cómo interactúan estos hooks con otros componentes y cómo se comportan en el contexto de una aplicación más amplia.
+
+3. **Prueba de Reducer**
+   - Incluiremos una prueba de un reducer, que aunque no es un hook en sí mismo, es una parte importante del flujo de datos en nuestra aplicación.
+   - Mostraremos cómo evaluar el comportamiento del reducer al agregar, eliminar o actualizar elementos en el estado.
+
+### Consideraciones Adicionales
+
+- **Responsabilidad de las Pruebas**:
+  - Aclararemos qué aspectos son responsabilidad de nuestras pruebas y cuáles no lo son.
+  - Explicaremos cómo centrarnos en evaluar el comportamiento de los hooks y custom hooks, sin preocuparnos por la implementación interna de React u otros componentes.
+
+- **Casos de Uso Real**:
+  - Nos enfocaremos en pruebas que reflejen casos de uso real de los hooks y custom hooks.
+  - Demostraremos cómo nuestras pruebas pueden proporcionar confianza en el correcto funcionamiento de estos elementos dentro de nuestra aplicación.
+
+Con esta guía, esperamos brindar una comprensión clara de cómo realizar pruebas efectivas sobre nuestros hooks y custom hooks, asegurando así la calidad y robustez de nuestra aplicación.

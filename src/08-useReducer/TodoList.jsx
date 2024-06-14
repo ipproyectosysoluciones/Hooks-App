@@ -7,9 +7,9 @@ export const TodoList = ({ todos = [], onDeleteTodo, onToggleTodo }) => {
     // Elemento ul con clases de Bootstrap para el estilo
     <ul className="list-group">
       {/* Iteramos sobre la lista de tareas y generamos un TodoItem para cada tarea */}
-      {todos.map( todo => (
+      {todos.map( ( todo, index ) => (
         <TodoItem
-          key={ todo.id } // Asignamos una clave única a cada elemento basado en el id de la tarea
+          key={ index } // Asignamos una clave única a cada elemento basado en el id de la tarea
           todo={ todo } // Pasamos la tarea completa como prop al componente TodoItem
           onDeleteTodo={ onDeleteTodo } // Pasamos la función onDeleteTodo como prop
           onToggleTodo={ onToggleTodo } // Pasamos la función onToggleTodo como prop

@@ -26,7 +26,7 @@ export const useCounter = ( initialValue = 10 ) => {
 
   // Función para incrementar el contador
   const increment = ( value = 1 ) => {
-    setCounter( counter + value );
+    setCounter( ( current ) => current + value );
   };
 
   // Función para decrementar el contador
@@ -34,7 +34,7 @@ export const useCounter = ( initialValue = 10 ) => {
     // Verifica si el contador es 0 para evitar valores negativos
     if ( counter === 0 ) return;
 
-    setCounter( counter - value );
+    setCounter( ( current ) => current - value );
   };
 
   // Función para restablecer el contador al valor inicial
